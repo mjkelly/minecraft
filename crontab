@@ -1,0 +1,9 @@
+# SETUP: Mail somewhere interesting if you want by uncommenting and updating
+# the next line.
+#MAILTO=me@example.com
+
+# SETUP: If your world is not called "world", change the name below.
+# m h  dom mon dow   command
+15 * * * * /home/minecraft/minecraft/overviewer.sh world
+@daily /home/minecraft/minecraft/clean-backups.sh 
+@daily /home/minecraft/minecraft/clean-logs.sh 
